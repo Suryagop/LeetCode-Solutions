@@ -1,0 +1,19 @@
+/**
+ * @param {number} x
+ * @param {number} n
+ * @return {number}
+ */
+
+var solve = function (x, n) {
+    if (n == 0) return 1.0;
+    let ans = solve(x, Math.floor(n / 2));
+    if (n % 2 == 0) return ans * ans;
+    return ans * ans * x;
+}
+
+var myPow = function (x, n) {
+    if (n == 0) return 1.0;
+    if (n < 0) return 1 / solve(x, Math.abs(n));
+    return solve(x, n)
+
+};
