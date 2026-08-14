@@ -19,6 +19,6 @@ var majorityElement = function (nums) {
         }
         i++;
     }
-    console.log(ans);
+    // console.log(ans);
     return ans;
 };
