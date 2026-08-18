@@ -24,8 +24,6 @@ var trap = function (height) {
     for (let i = 0; i < height.length; i++) {
         total = total + (Math.min(leftmax[i], rightmax[i])) - height[i];
     }
-    console.log(leftmax);
-    console.log(rightmax);
-
+    
     return total;
 };
