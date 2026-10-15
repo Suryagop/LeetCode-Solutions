@@ -13,10 +13,10 @@ var threeSum = function (nums) {
                 ans.push([nums[i], nums[j], nums[k]]);
                 j++;
                 k--;
-                while (nums[j] == nums[j - 1]) {
+                while (j < k && nums[j] == nums[j - 1]) {
                     j++;
                 }
-                while (nums[k] == nums[k + 1]) {
+                while (j < k && nums[k] == nums[k + 1]) {
                     k--;
                 }
 
