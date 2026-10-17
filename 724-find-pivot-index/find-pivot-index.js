@@ -17,9 +17,9 @@ var pivotIndex = function (nums) {
         }
 
         let rightsum = 0;
-        for (let j = i + 1; j < nums.length; j++) {
-            rightsum = totalsum - leftsum - nums[i];
-        }
+
+        rightsum = totalsum - leftsum - nums[i];
+
         if (leftsum == rightsum) return i;
 
     }
