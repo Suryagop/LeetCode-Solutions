@@ -4,10 +4,10 @@
  * @return {number}
  */
 var search = function (nums, target) {
-    let start = 0, end = nums.length - 1, mid = -1;
+    let start = 0, end = nums.length - 1;
 
     while (start <= end) {
-        let mid = Math.floor((start + end) / 2)
+        mid = Math.floor((start + end) / 2)
         if (nums[mid] == target) return mid;
         else if (nums[start] <= nums[mid]) {
             if (nums[start] <= target && target <= nums[mid]) {
@@ -23,5 +23,5 @@ var search = function (nums, target) {
         }
     }
 
-    return mid;
+    return -1;
 };
