@@ -15,5 +15,5 @@ var peakIndexInMountainArray = function(arr) {
     }
     //Iteration stops when only one element is left ie; start & end points to same element 
     // hence there is no need for furthur comparison and return the answer.
-    return start;
+    return start; //OR return end;
 };
