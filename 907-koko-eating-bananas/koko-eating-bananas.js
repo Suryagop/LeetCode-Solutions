@@ -10,8 +10,15 @@ var minEatingSpeed = function (piles, h) {
     function isValid(arr, speed, h) {
         let totalHour = 0;
         for (let i = 0; i < arr.length; i++) {
-
             totalHour += Math.ceil(arr[i] / speed);
+            //  totalHour += Math.ceil(arr[i] / speed); It is the one line for:
+            // if ((arr[i] % speed) == 0) {
+            //     totalHour += Math.floor(arr[i] / speed);
+            // }
+            // else {
+            //     totalHour += Math.floor(arr[i] / speed) + 1;
+            // }
+
         }
         if (totalHour > h) return false;
 
