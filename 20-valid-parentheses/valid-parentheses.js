@@ -7,7 +7,6 @@ var isValid = function (s) {
     for (let i = 0; i < s.length; i++) {
         if (s[i] == "(" || s[i] == "[" || s[i] == "{") {
             st.push(s[i]);
-            continue;
         }
         else if (s[i] == ")" || s[i] == "]" || s[i] == "}") {
             if (st[st.length - 1] == "(" && s[i] == ")") {
